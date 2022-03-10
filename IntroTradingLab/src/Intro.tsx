@@ -1,7 +1,7 @@
 import {Sequence, Audio, interpolate, useCurrentFrame} from 'remotion';
 import {IntroTradingLab} from './Intro/IntroTradingLab';
 import {IntroRack} from './Intro/IntroRack';
-import bubbles from "./Intro/bubbles.mp4";
+import bubbles from "./assets/bubbles.mp4";
 
 export const Intro: React.FC = () => {
   const frame = useCurrentFrame();

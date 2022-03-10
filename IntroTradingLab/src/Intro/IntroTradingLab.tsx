@@ -1,5 +1,5 @@
 import {useCurrentFrame, interpolate, Img} from 'remotion';
-import logo from "./logo.gif";
+import logo from "../assets/logo.gif";
 
 export const IntroTradingLab: React.FC = () => {
 	const frame = useCurrentFrame();

@@ -1,6 +1,5 @@
-import {useCurrentFrame, interpolate, interpolateColors, Img} from 'remotion';
-import rack from "./rack.gif";
-import logo from "./logo.gif";
+import {useCurrentFrame, interpolate, Img} from 'remotion';
+import logo from "../assets/logo.gif";
 
 export const OutroTradingLab: React.FC = () => {
 	const frame = useCurrentFrame();

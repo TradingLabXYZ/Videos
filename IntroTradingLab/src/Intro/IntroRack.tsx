@@ -1,5 +1,5 @@
 import {useCurrentFrame, interpolate, interpolateColors, Img} from 'remotion';
-import rack from "./rack.gif";
+import rack from "../assets/rack.gif";
 
 export const IntroRack: React.FC = () => {
 	const frame = useCurrentFrame();
