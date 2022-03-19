@@ -11,7 +11,7 @@ export const RemoticonVideo: React.FC = () => {
 			<Composition
 				id="IntroTradingLab"
 				component={IntroTradingLab}
-				durationInFrames={4611}
+				durationInFrames={4330}
 				fps={30}
 				width={1280}
 				height={720}
@@ -35,7 +35,7 @@ export const RemoticonVideo: React.FC = () => {
 			<Composition
 				id="Outro"
 				component={Outro}
-				durationInFrames={200}
+				durationInFrames={100}
 				fps={30}
 				width={1280}
 				height={720}

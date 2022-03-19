@@ -10,10 +10,10 @@ export const IntroTradingLab: React.FC = () => {
         <Sequence from={0} durationInFrames={400}>
           <Intro/>
         </Sequence>
-        <Sequence from={395} durationInFrames={4011}>
+        <Sequence from={400} durationInFrames={3830}>
           <Main/>
         </Sequence>
-        <Sequence from={4411} durationInFrames={600}>
+        <Sequence from={4230} durationInFrames={4330}>
           <Outro/>
         </Sequence>
       </div>

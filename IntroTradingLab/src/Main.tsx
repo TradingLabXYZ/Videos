@@ -6,6 +6,7 @@ export const Main: React.FC = () => {
     <AbsoluteFill>
       <Video
         src={speach}
+        endAt={3830}
       />
     </AbsoluteFill>
 	);
