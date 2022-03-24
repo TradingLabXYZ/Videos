@@ -5,7 +5,7 @@ import bubbles from "./assets/bubbles.mp4";
 
 export const Intro: React.FC = () => {
 	const frame = useCurrentFrame();
-  const audioInter = interpolate(frame, [0, 200, 350, 400], [0.01, 0.8, 0.7, 0.01], {extrapolateLeft: "clamp"})
+  const audioInter = interpolate(frame, [0, 100, 200, 300], [0.01, 0.8, 0.7, 0.01], {extrapolateLeft: "clamp"})
 	return (
 		<div>
       <div>
@@ -13,10 +13,10 @@ export const Intro: React.FC = () => {
           src={bubbles}
           volume={audioInter}
         />
-        <Sequence from={0} durationInFrames={200}>
+        <Sequence from={0} durationInFrames={100}>
           <IntroRack/>
         </Sequence>
-        <Sequence from={200} durationInFrames={400}>
+        <Sequence from={100} durationInFrames={300}>
           <IntroTradingLab/>
         </Sequence>
       </div>
