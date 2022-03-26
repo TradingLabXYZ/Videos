@@ -19,7 +19,7 @@ export const WhaleImg: React.FC<{
     },
   });
 
-  const position = interpolate(whale, [0, 1], [-1, 2]);
+  const position = interpolate(whale, [0, 1], [-0.5, 1.5]);
 
   let x = '';
   if (direction > 0) {

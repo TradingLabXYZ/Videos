@@ -17,9 +17,9 @@ export const Whales: React.FC<{
     });
   }, []);
   return (
-    <div>
-      <Img src={DeepOcean} className="w-full h-screen bg-center bg-cover"/>
-      <div className="bg-white">
+    <div className="bg-gray-100">
+      <Img src={DeepOcean} className="object-cover w-full h-full"/>
+      <div className="">
         {drops.map((d) => {
           return <WhaleImg y={d.y} delay={d.delay} size={d.size} direction={d.direction}/>;
         })}

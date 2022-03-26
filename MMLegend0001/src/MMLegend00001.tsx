@@ -15,13 +15,13 @@ export const MMLegend00001: React.FC = () => {
       <Series.Sequence durationInFrames={880}>
         <Welcome/>
       </Series.Sequence>
-      <Series.Sequence durationInFrames={50}>
+      <Series.Sequence durationInFrames={100}>
         <Whales direction={1}/>
       </Series.Sequence>
       <Series.Sequence durationInFrames={2020}>
         <Etherscan/>
       </Series.Sequence>
-      <Series.Sequence durationInFrames={50}>
+      <Series.Sequence durationInFrames={100}>
         <Whales direction={-1}/>
       </Series.Sequence>
       <Series.Sequence durationInFrames={1486}>

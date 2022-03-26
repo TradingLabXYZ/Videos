@@ -11,25 +11,25 @@ export const RemoticonVideo: React.FC = () => {
 				id="MMLegend00001"
 				component={MMLegend00001}
 				durationInFrames={5000}
-				fps={30}
-				width={1280}
-				height={720}
+				fps={60}
+				width={1920}
+				height={1200}
 			/>
 			<Composition
 				id="Extraction"
 				component={Extraction}
 				durationInFrames={1486}
-				fps={30}
-				width={1280}
-				height={720}
+				fps={60}
+				width={1920}
+				height={1200}
 			/>
 			<Composition
 				id="RecapTable"
 				component={RecapTable}
 				durationInFrames={418}
-				fps={30}
-				width={1280}
-				height={720}
+				fps={60}
+				width={1920}
+				height={1200}
 			/>
 		</>
 	);
