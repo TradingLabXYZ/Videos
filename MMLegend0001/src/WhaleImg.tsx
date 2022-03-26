@@ -6,7 +6,8 @@ export const WhaleImg: React.FC<{
   delay: number;
   y: string;
   size: number;
-}> = ({ delay, y, size }) => {
+  direction: number;
+}> = ({ delay, y, size, direction }) => {
   const { fps } = useVideoConfig();
   const frame = useCurrentFrame();
 
@@ -20,14 +21,21 @@ export const WhaleImg: React.FC<{
 
   const position = interpolate(whale, [0, 1], [-1, 2]);
 
+  let x = '';
+  if (direction > 0) {
+    x = position * 100 + "%";
+  } else {
+    x = 100 - position * 100 + "%";
+  }
+
   return (
     <Img src={Whale}
       style={{
         width: 100,
         position: "absolute",
         top: y,
-        left: position * 100 + "%",
-        transform: `scale(${size})`,
+        left: x,
+        transform: `scale(${size}) scaleX(${direction})`,
       }}
     />
   );

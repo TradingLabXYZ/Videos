@@ -1,10 +1,10 @@
 {
 	"name": "tradinglab_intro",
 	"version": "1.0.0",
-	"description": "TradingLab Introduction",
+	"description": " MMLegend00001",
 	"scripts": {
 		"start": "remotion preview src/index.tsx",
-		"build": "remotion render src/index.tsx Intro out/video.mp4",
+		"build": "remotion render src/index.tsx MMLegend00001 out/video.mp4",
 		"upgrade": "remotion upgrade",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
 	},
