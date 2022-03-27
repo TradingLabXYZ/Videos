@@ -5,6 +5,7 @@ import {Whales} from './Whales';
 import {Etherscan} from './Etherscan';
 import {Extraction} from './Extraction';
 import {RecapTable} from './RecapTable';
+import {ZoomImg} from './ZoomImg';
 
 export const MMLegend00001: React.FC = () => {
 	return (
@@ -27,8 +28,11 @@ export const MMLegend00001: React.FC = () => {
       <Series.Sequence durationInFrames={1486}>
         <Extraction/>
       </Series.Sequence>
-      <Series.Sequence durationInFrames={418}>
+      <Series.Sequence durationInFrames={845}>
         <RecapTable/>
+      </Series.Sequence>
+      <Series.Sequence durationInFrames={50}>
+        <ZoomImg/>
       </Series.Sequence>
 		</Series>
 	);

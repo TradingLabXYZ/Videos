@@ -3,6 +3,7 @@ import {Composition} from 'remotion';
 import {MMLegend00001} from './MMLegend00001';
 import {Extraction} from './Extraction';
 import {RecapTable} from './RecapTable';
+import {ZoomImg} from './ZoomImg';
 
 export const RemoticonVideo: React.FC = () => {
 	return (
@@ -10,7 +11,7 @@ export const RemoticonVideo: React.FC = () => {
 			<Composition
 				id="MMLegend00001"
 				component={MMLegend00001}
-				durationInFrames={5000}
+				durationInFrames={10000}
 				fps={60}
 				width={1920}
 				height={1200}
@@ -26,7 +27,15 @@ export const RemoticonVideo: React.FC = () => {
 			<Composition
 				id="RecapTable"
 				component={RecapTable}
-				durationInFrames={418}
+				durationInFrames={845}
+				fps={60}
+				width={1920}
+				height={1200}
+			/>
+			<Composition
+				id="ZoomImg"
+				component={ZoomImg}
+				durationInFrames={50}
 				fps={60}
 				width={1920}
 				height={1200}
