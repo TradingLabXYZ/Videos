@@ -6,6 +6,9 @@ import {Etherscan} from './Etherscan';
 import {Extraction} from './Extraction';
 import {RecapTable} from './RecapTable';
 import {ZoomImg} from './ZoomImg';
+import {CircleMovementImg} from './CircleMovementImg';
+import {WordIn} from './WordIn';
+import {VideoSwitch} from './VideoSwitch';
 
 export const MMLegend00001: React.FC = () => {
 	return (
@@ -33,6 +36,15 @@ export const MMLegend00001: React.FC = () => {
       </Series.Sequence>
       <Series.Sequence durationInFrames={50}>
         <ZoomImg/>
+      </Series.Sequence>
+      <Series.Sequence durationInFrames={200}>
+        <CircleMovementImg/>
+      </Series.Sequence>
+      <Series.Sequence durationInFrames={200}>
+        <WordIn/>
+      </Series.Sequence>
+      <Series.Sequence durationInFrames={400}>
+        <VideoSwitch/>
       </Series.Sequence>
 		</Series>
 	);
