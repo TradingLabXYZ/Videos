@@ -6,24 +6,23 @@ import bubbles from "./assets/bubbles.mp4";
 
 export const Intro: React.FC = () => {
 	const frame = useCurrentFrame();
-  const audioInter = interpolate(frame, [0, 200, 350, 800], [0.01, 0.8, 0.7, 0.01], {extrapolateLeft: "clamp"})
+  const audioInter = interpolate(frame, [0, 200, 550], [0.1, 0.8, 0.1])
 	return (
-		<div>
-      <div>
-        <Audio
-          src={bubbles}
-          volume={audioInter}
-        />
-        <Sequence from={0} durationInFrames={200}>
-          <IntroRack/>
-        </Sequence>
-        <Sequence from={200} durationInFrames={400}>
-          <IntroTradingLab/>
-        </Sequence>
-        <Sequence from={400} durationInFrames={800}>
-          <IntroDisclaimer/>
-        </Sequence>
-      </div>
-		</div>
+    <div>
+      <Audio
+        src={bubbles}
+        volume={audioInter}
+        endAt={580}
+      />
+      <Sequence from={0} durationInFrames={200}>
+        <IntroRack/>
+      </Sequence>
+      <Sequence from={200} durationInFrames={200}>
+        <IntroTradingLab/>
+      </Sequence>
+      <Sequence from={400} durationInFrames={200}>
+        <IntroDisclaimer/>
+      </Sequence>
+    </div>
 	);
 };
