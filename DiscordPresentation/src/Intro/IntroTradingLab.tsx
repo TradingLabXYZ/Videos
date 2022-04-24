@@ -23,7 +23,19 @@ export const IntroTradingLab: React.FC = () => {
             opacity: opacitySubtitle
           }}
         >
-          coming soon...
+        </div>
+        <div 
+          className='text-center mt-5 text-5xl'
+          style={{
+            opacity: opacitySubtitle
+          }}
+        >
+          <div>
+            Million Token Community presentation
+          </div>
+          <div>
+            23rd April 2022
+          </div>
         </div>
       </div>
     </div>

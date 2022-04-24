@@ -8,7 +8,7 @@ export const RemoticonVideo: React.FC = () => {
 			<Composition
 				id="Intro"
 				component={Intro}
-				durationInFrames={400}
+				durationInFrames={800}
 				fps={30}
 				width={1280}
 				height={720}

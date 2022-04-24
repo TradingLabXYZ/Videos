@@ -1,11 +1,12 @@
 import {Sequence, Audio, interpolate, useCurrentFrame } from 'remotion';
 import {IntroTradingLab} from './Intro/IntroTradingLab';
 import {IntroRack} from './Intro/IntroRack';
+import {IntroDisclaimer} from './Intro/IntroDisclaimer';
 import bubbles from "./assets/bubbles.mp4";
 
 export const Intro: React.FC = () => {
 	const frame = useCurrentFrame();
-  const audioInter = interpolate(frame, [0, 200, 350, 400], [0.01, 0.8, 0.7, 0.01], {extrapolateLeft: "clamp"})
+  const audioInter = interpolate(frame, [0, 200, 350, 800], [0.01, 0.8, 0.7, 0.01], {extrapolateLeft: "clamp"})
 	return (
 		<div>
       <div>
@@ -18,6 +19,9 @@ export const Intro: React.FC = () => {
         </Sequence>
         <Sequence from={200} durationInFrames={400}>
           <IntroTradingLab/>
+        </Sequence>
+        <Sequence from={400} durationInFrames={800}>
+          <IntroDisclaimer/>
         </Sequence>
       </div>
 		</div>
